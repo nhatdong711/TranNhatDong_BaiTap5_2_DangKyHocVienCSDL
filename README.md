@@ -14,6 +14,20 @@ Bài 4.2 chỉ in thông tin đăng ký ra MessageBox, danh sách khóa học vi
 - Kiểm tra dữ liệu bằng `ErrorProvider`: họ tên không trống, chỉ chữ cái; SĐT phải nhập đủ.
 - Chương trình **tự tạo CSDL + bảng + 3 khóa học mẫu** khi chạy lần đầu.
 
+## Hình ảnh minh họa
+
+**1. Giao diện bình thường** – danh sách học viên đọc từ CSDL hiển thị trên DataGridView.
+
+![Giao diện chính](docs/bai5_2_main.jpg)
+
+**2. Nhập lỗi** – họ tên có ký tự đặc biệt, số điện thoại chưa đủ, `ErrorProvider` báo lỗi cạnh từng ô.
+
+![Bắt lỗi nhập liệu](docs/bai5_2_error.jpg)
+
+**3. Thêm học viên thành công** – bấm "Đăng ký", thông tin được tổng hợp lên MessageBox và lưu vào bảng `HocVien`.
+
+![Đăng ký thành công](docs/bai5_2_add.jpg)
+
 ## Cách chạy
 1. Cài XAMPP, mở **XAMPP Control Panel** → **Start MySQL** (mặc định user `root`, không mật khẩu, cổng 3306).
 2. Mở `BaiTap5_2_DangKyHocVien.csproj` bằng Visual Studio 2022+ (.NET 10). NuGet tự tải gói `MySqlConnector`.
